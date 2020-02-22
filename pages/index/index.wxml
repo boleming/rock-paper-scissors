@@ -1,0 +1,14 @@
+<view class="content">
+  <text class="mt40">你已经获胜了{{newNum}}次</text>
+  <view class="w80 df-jc">
+    <image src="{{imageUserSrc}}"></image>
+    <image src="{{imageAiSrc}}"></image>
+  </view>
+  <view class="w90">
+    <text class="mt40">出拳吧，少年~</text>
+    <view class="w598 df-jc">
+      <image class="br50" bindtap="stoptimer" wx:for="{{imgs}}" wx:item="{{item}}" wx:key="idx" src="{{item}}" data-imgSrc="{{item}}"></image>
+    </view>
+    <button class="again" bindtap="timerGo">再来！</button>
+  </view>
+</view>
